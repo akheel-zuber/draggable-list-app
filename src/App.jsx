@@ -60,7 +60,7 @@ function App() {
           onDragOver={(e) => handleDragOver(e)}
           onDrop={(e) => handleDrop(e, item.id)}
           draggable="true"
-          className={`border-2 border-gray-400 rounded-lg w-100 mx-auto mt-3 h-10 cursor-move ${colors[item.id]} hover:${hoverColors[item.id]} flex justify-center items-center`}
+          className={`border-2 border-gray-400 rounded-lg w-100 mx-auto mt-3 h-10 cursor-move ${colors[(item.id)%5]} hover:${hoverColors[(item.id)%5]} flex justify-center items-center`}
         >
           {item.content}
         </div>
